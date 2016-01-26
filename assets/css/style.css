@@ -1,0 +1,402 @@
+@font-face {
+    font-family: myriad;
+    src: url(../font/MyriadPro-Regular.otf);
+}
+*{margin: 0; padding: 0;}
+
+
+/* ---------------- HELPFUL CLASSES ------------------------------------- */
+.pad {
+    margin: 40px auto 0 auto;
+}
+.pad-bot{
+    margin: 15px auto 15px auto;
+}
+
+/*-------------------------- Custom Button Styles-------------------------- */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(75,75,75,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #0061d3;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+/*-------------------------------- Side Menu ------------------------------- */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: linear-gradient(
+      rgba(0, 0,0, 1), 
+      rgba(0, 0, 0, 0.45)
+    );
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Cabin';
+    font-size: 24px;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #ffcc00;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* --------------------------------------------------------------------------- */
+/* ---------------- HEADER STYLE SECTION ----------------------------- */
+.header {
+    background: url(../img/heart.png) no-repeat center center scroll;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    flex-direction: column;
+    flex-direction: -webkit-column;
+    justify-content: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.heading {
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Candal', sans-serif;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------------------------------- */
+/* --------------------- SKILLS STYLE SECTION ------------------------------- */
+#skill-bg {
+    background:linear-gradient(
+      rgba(15, 19,79, 0.95), 
+      rgba(15,19, 79, 0.95)
+    ),url(../img/tri.png) fixed,repeat ;
+    background-size: contain; 
+    
+}
+#skill-bg > .container-fluid {
+    padding: 10px 50px;
+} 
+#skill-bg2 {
+    background: rgba(81,81,80,0.58);
+    margin-top: 40px;
+    padding:0 70px 40px 70px;
+}
+#skill-bg h1 {
+    font-family: 'Cabin', sans-serif;
+    color: #ffcc00;
+    font-weight: 600;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    letter-spacing: 1px;
+    line-height: 44px;
+}
+#skill-bg h2{
+    font-family: 'Cabin', sans-serif;
+    color: #ffcc00;;
+   letter-spacing: 1px;
+    font-weight: 600;
+    
+}
+#skill-bg h4{
+    padding-top: 15px;
+    font-family: myriad , sans-serif;
+    
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+/* ------------- Font awesome style ------------ */
+.fa-stack-1x{border: 1px solid #fff;}
+
+.text-color p{
+    color: #fff;
+    line-height: 24px;
+    word-spacing: 2px;
+    font-family: myriad , sans-serif;
+    font-weight: 200; 
+    letter-spacing: 1px;
+}
+
+.progress {
+    background-color: #c5c7de;
+    border-radius: 5px;
+}
+.progress-bar {
+    color: #0f134f;
+    background-color: #ffcc00;
+}
+/* --------------------------------------------------------------------------- */
+/*-------------------------- ABOUT STYLES ------------------------------------- */
+.about-bg {
+    background-color: #fff9c4;
+    height:100%;
+    padding-bottom: 128px;
+    padding-top: 128px;
+    position: relative;
+    z-index: -1;
+}
+#bottom-img{
+    position: absolute;
+   bottom:-5%;
+    left: -6%;
+    right: 0;
+    z-index: 1000;  
+}
+
+#top-img{
+    position: absolute;
+    top:0;
+    right: 0;
+    z-index: 1000;
+}
+
+#back {
+  border: 2px solid #0f134f;
+    width: 75vw;
+    margin: 0 auto;
+}
+
+ .center {
+    margin: 100px auto ;
+    color: #130733;
+    font-family: myriad, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+}
+/* --------------------------------------------------------------------------- */
+/*-------------------------- PORTFOLIO STYLES ------------------------------------- */
+.port-bg {
+    height: 140px;
+    background: #c1c1c5;
+    padding: 35px;
+    
+}
+.btn-xl {
+   max-width: 100%;
+    border-radius: 0;
+    background: #ffcc00;
+    color: #fff;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    word-spacing: 1px;
+    padding:25px 30px;
+}
+a.btn-xl:hover {
+    box-shadow:-10px 10px white;
+    transform: translateZ(0);
+    transition-duration: 1s;
+    color: #fff; 
+}
+
+/* --------------------------------------------------------------------------- */
+/*-------------------------- CONTACT ME STYLES ------------------------------------- */
+
+.contact-bg {
+    background:  linear-gradient( rgba(255,255,255, 0.5), rgba(255, 255,255, 0.5)),
+        url(../img/flower-bg.png) no-repeat right bottom;
+    height: 100%;
+}
+.section-heading {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #464646;
+    padding-top: 40px;
+    letter-spacing:  5px;
+    line-height: 60px;
+}
+.section-subheading {
+    font-family: myriad, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+     color: #464646;
+    word-spacing: 2px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    padding-bottom: 60px;
+}
+.btn-snd {
+    background: #ffcc00;
+    color: #fff;
+    font-family: 'Cabin',sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.form{
+    width: 100%;
+     height: 78px;
+    padding: 15px;
+    background:rgba(246,241,221,0.5);
+    border:1px solid rgba(255, 228,159, 1);
+    border-radius: 0;
+    margin-bottom:25px;
+    color:#333;
+    font-size:25px;
+    
+  }
+.form:focus {
+  border-color: #ffcc00;
+    box-shadow: rgba(255, 228,159, 1);
+}
+.text {
+    font-family: 'Cabin',sans-serif;
+    font-size: 72px;
+    color: #fff;
+    padding: 50px 0; 
+}
+
+/* --------------------------------------------------------------------------- */
+/*-------------------------- EMAIL STYLES ------------------------------------- */
+.email-bg {
+    background: #0f134f;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.email-bg a{
+    font-family: 'Cabin',sans-serif;
+    font-weight:800;
+   
+    color: #fff;
+    margin-top: 68px;
+    margin-bottom: 68px;
+}
+.email-bg a:hover {
+    text-decoration: none;
+    color: #ffcc00;
+}
+
+/* --------------------------------------------------------------------------- */
+/*-------------------------- footer ------------------------------------- */
+
+.foot-bg {
+    height: 100%;
+    background: #807a7a;
+    padding-top: 25px;
+}
+.foot-bg a{
+    display: block;
+    color:#807a7a ;
+    background:#ffcc00; 
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+.foot-bg a:hover {
+    background: #0f134f;
+}
+.copyright {
+    line-height: 40px;
+    font-family: myriad, sans-serif;
+    font-size: 15px;
+    color: #ffcc00;
+   
+}
+
+.foot-bg ul {
+    margin-bottom: 20px;
+}
+/* --------------------------------------------------------------------------- */
+/*-------------------------- Media queries ------------------------------------- */
+@media screen and (min-width: 760px) {
+   .heading {
+        font-size: 50px;
+    }
+    .text-color p {font-size: 18px;}
+    .fa-4x{font-size: 7em;}
+    .email-bg a{
+        font-size: 50px;
+    }
+    .btn-xl {
+        font-size: 20px;
+    }
+}
