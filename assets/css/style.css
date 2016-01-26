@@ -120,7 +120,7 @@
 /* --------------------------------------------------------------------------- */
 /* ---------------- HEADER STYLE SECTION ----------------------------- */
 .header {
-    background: url(../img/heart.png) no-repeat center center scroll;
+    background: url(../img/heart.jpg) no-repeat center center scroll;
     height: 100vh;
     max-width: 100%;
     display: flex;
