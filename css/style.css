@@ -103,8 +103,15 @@ hr.line {
     -moz-transition: all 0.7s ease ;
     -o-transition: all 0.7s ease ;
 }
-
-
+.btn-linkedin:hover,.btn-linkedin:focus,.btn-linkedin:active { 
+    color:#fff;
+    background-color:#0077b5;
+    border-color:rgba(0,0,0,0.2);
+    transition: all 0.7s ease; 
+    -webkit-transition:all 0.7s ease ;
+    -moz-transition: all 0.7s ease ;
+    -o-transition: all 0.7s ease ;
+}
 .navbar-default {
     margin: 0;
     background-color: rgba(255,255,0,1);
